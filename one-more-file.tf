@@ -7,3 +7,12 @@ module "custtopus_viewer_bindings" {
     "roles/viewer",
   ]
 }
+
+module "custtopus_viewer_bindingss" {
+  project_context = module.workload_context.project_context2
+  member          = "abc"
+  roles = [
+    "roles/bigquery.admin",
+    "roles/viewer",
+  ]
+}
